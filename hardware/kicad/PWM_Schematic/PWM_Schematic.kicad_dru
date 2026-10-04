@@ -1,0 +1,11 @@
+(version 1)
+
+(rule "Normal to ISO domain minimum clearance"
+    (condition "(A.hasNetclass('ISO_DOMAIN') && !B.hasNetclass('ISO_DOMAIN')) || (B.hasNetclass('ISO_DOMAIN') && !A.hasNetclass('ISO_DOMAIN'))")
+    (constraint clearance (min 1.50mm))
+)
+
+(rule "Analog ISO zone to Arduino D2"
+    (condition "((A.Type == 'Zone' && A.Name == 'ISO_GND_ANALOG_BCU' && B.NetName == 'Net-(A1-D2)') || (B.Type == 'Zone' && B.Name == 'ISO_GND_ANALOG_BCU' && A.NetName == 'Net-(A1-D2)'))")
+    (constraint clearance (min 6.25mm))
+)

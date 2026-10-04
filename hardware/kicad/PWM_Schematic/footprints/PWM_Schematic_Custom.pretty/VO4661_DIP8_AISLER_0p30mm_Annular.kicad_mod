@@ -1,0 +1,308 @@
+(footprint "VO4661_DIP8_AISLER_0p30mm_Annular"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "DIP-8 (Standard)")
+	(tags "Transistor")
+	(property "Reference" "Q3"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "7a376735-545c-4e4b-8a1e-7e4ea8ab02d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "VO4661"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "05d9fa42-fad6-4a35-a36c-2cbc75b07416")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/80412/vo2630_vo2631_vo4661.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aed24c11-2e83-49a8-b5e5-e136bbc45dfb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Logic Output Optoisolator 10MBd Open Drain 5300Vrms 2 Channel 15kV/s CMTI 8-DIP"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d413bad-3853-4b4d-a6b8-af1fc8ee2d27")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Height" "4.5"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1cdd7dd7-df1b-4b3a-bbb7-c8f4311cdd5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "782-VO4661"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79a2074c-b09f-4eb1-9a33-c0e9b611bcfa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/VO4661?qs=xCMk%252BIHWTZMcbMwyRM4ogA%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29449a55-ad5d-4cb3-8622-7308bd07f4bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Vishay"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bff7cbb5-30c4-478a-bd24-a65419847952")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "VO4661"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6b02039a-f231-4065-816c-ca62d200985e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "PWM_Schematic.kicad_sch")
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.41 -5.08)
+		(end 3.425 -5.08)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "006eb509-4c25-48c3-991a-f5d5e6491b03")
+	)
+	(fp_line
+		(start -3.425 5.08)
+		(end 3.425 5.08)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "14ce4971-440c-4d79-a843-c67d9a029cbc")
+	)
+	(fp_line
+		(start -4.66 -5.33)
+		(end 4.66 -5.33)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "502fa5bd-e180-4e06-a1da-90f822fb3a74")
+	)
+	(fp_line
+		(start -4.66 5.33)
+		(end -4.66 -5.33)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4308da25-ace1-4cf0-8097-430748a69ce8")
+	)
+	(fp_line
+		(start 4.66 -5.33)
+		(end 4.66 5.33)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "84dc56ac-5d82-45fb-bce9-61ea4a439968")
+	)
+	(fp_line
+		(start 4.66 5.33)
+		(end -4.66 5.33)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3442a28f-f526-4b32-85d7-20cbd8f79889")
+	)
+	(fp_line
+		(start -3.425 -5.08)
+		(end 3.425 -5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f4c6cb2e-4612-4dcc-b9d2-3107ef71e7fe")
+	)
+	(fp_line
+		(start -3.425 -3.81)
+		(end -2.155 -5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "aca1db02-93d3-4614-8ee6-5aebb84d47f8")
+	)
+	(fp_line
+		(start -3.425 5.08)
+		(end -3.425 -5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "69158f16-207f-4c5e-a0f4-bad59a73d9d0")
+	)
+	(fp_line
+		(start 3.425 -5.08)
+		(end 3.425 5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9c99d618-c0b6-4dbe-a4df-58eef86b7884")
+	)
+	(fp_line
+		(start 3.425 5.08)
+		(end -3.425 5.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a694480a-5158-4aa3-8d7e-abf7b380545e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "74796057-451f-4905-956a-22d125d11ee2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -3.81 -3.81)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1ebeb953-9a4b-4a10-9eb8-bf72291bdddc")
+	)
+	(pad "2" thru_hole circle
+		(at -3.81 -1.27)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e52e627d-1aed-48ec-8857-5e3f2e7ad004")
+	)
+	(pad "3" thru_hole circle
+		(at -3.81 1.27)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "307dc6c7-cdc4-4ecc-80a9-3706a9995f79")
+	)
+	(pad "4" thru_hole circle
+		(at -3.81 3.81)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4ab4dd09-6a4d-4ae7-8b9b-f662f58677fd")
+	)
+	(pad "5" thru_hole circle
+		(at 3.81 3.81)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3ba631ed-18e3-4737-89e7-32c2946c5ea8")
+	)
+	(pad "6" thru_hole circle
+		(at 3.81 1.27)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c2709987-abeb-444f-ba70-a88e6a45125b")
+	)
+	(pad "7" thru_hole circle
+		(at 3.81 -1.27)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6a711735-cf14-46ed-81c9-77d7ce4512e9")
+	)
+	(pad "8" thru_hole circle
+		(at 3.81 -3.81)
+		(size 1.5 1.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2c66a242-cebc-4bb4-af80-582e14ab0b80")
+	)
+	(embedded_fonts no)
+)

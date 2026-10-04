@@ -1,0 +1,123 @@
+# ============================================================
+# Thesis report - excluded until publication permission exists
+# ============================================================
+
+thesis/*
+!thesis/README.md
+
+# Local editor and KiCad history
+**/.history/
+
+# Locally retained research papers and copyrighted references
+project_sources/
+references/
+
+# ============================================================
+# Private backups and staging directories
+# ============================================================
+
+private/
+backups/
+staging/
+*_PRIVATE_BACKUP/
+*pi-source-backup*
+*pi-private-evidence*
+*.tar
+*.tar.gz
+*.tgz
+
+# ============================================================
+# Raw or unsanitized validation evidence
+# ============================================================
+
+validation/raw/
+validation/private/
+software/raspberry-pi/runs/
+software/raspberry-pi/current-run
+software/raspberry-pi/last-run
+
+# ============================================================
+# Runtime state and generated session files
+# ============================================================
+
+state.json
+command.json
+tcpdump.log
+docker-all.log
+josev-secc.log
+secc-follow.log
+slac.log
+console.log
+cp-monitor.log
+
+# ============================================================
+# Environment files, credentials and certificates
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# ============================================================
+# Python and development artifacts
+# ============================================================
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# ============================================================
+# LaTeX generated files
+# ============================================================
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# ============================================================
+# KiCad generated and temporary files
+# ============================================================
+
+*-backups/
+*.lck
+*.bak
+*.bck
+*.kicad_prl
+fp-info-cache
+~*
+
+# ============================================================
+# Operating system and editor files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+# Local operations configuration
+software/configuration/monday-ops.env

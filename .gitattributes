@@ -1,0 +1,24 @@
+* text=auto
+
+*.sh text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ini text eol=lf
+*.md text eol=lf
+*.ino text eol=lf
+*.tex text eol=lf
+*.kicad_pro text eol=lf
+*.kicad_sch text eol=lf
+*.kicad_pcb text eol=lf
+*.kicad_dru text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.pcap binary
+*.pcapng binary
+*.zip binary
+*.gz binary

@@ -1,0 +1,33 @@
+name: monday-ev
+
+services:
+  redis:
+    image: redis:6.2.6-alpine
+    ports:
+      - "127.0.0.1:6379:6379"
+    restart: "no"
+
+  secc:
+    image: iso15118-secc:latest
+    init: true
+    network_mode: host
+    depends_on:
+      - redis
+    env_file:
+      - .env.monday-real-ev
+    environment:
+      NETWORK_INTERFACE: eth0
+      REDIS_HOST: 127.0.0.1
+      REDIS_PORT: "6379"
+      MONDAY_RUNTIME_DIR: /run/evse-monday
+    volumes:
+      - ./iso15118:/usr/src/app/iso15118:ro
+      - /run/evse-monday:/run/evse-monday:rw
+    entrypoint:
+      - /venv/bin/python
+      - -m
+      - iso15118.secc.monday_main
+    restart: "no"
+    stop_grace_period: 5s
+    security_opt:
+      - no-new-privileges:true
