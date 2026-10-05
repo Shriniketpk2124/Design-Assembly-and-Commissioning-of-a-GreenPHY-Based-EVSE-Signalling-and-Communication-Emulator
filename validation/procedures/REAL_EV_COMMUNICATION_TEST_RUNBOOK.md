@@ -192,7 +192,7 @@ Require:
 CP_MODE=PWM
 CP_POSITIVE_DUTY=5.0%
 REMOTE=ON
-FB_PAIR=11
+FB_PAIR=10
 FB_STABLE=YES
 ```
 
@@ -201,6 +201,10 @@ and:
 ```text
 CP=B2 usable=True
 ```
+
+The validated feedback mapping may later change to `FB_PAIR=11`, decoded C2,
+when the vehicle requests the ready-to-charge CP state. This is a normal
+vehicle-controlled transition; it is not the initial State-B acceptance check.
 
 Observe the evidence in this order:
 
@@ -284,6 +288,6 @@ State-B load. It is not a substitute for component qualification.
 4. Attach the oscilloscope using the validated measurement points.
 5. Start `monday_ops.sh test-day` and establish State A.
 6. Require stable `FB_PAIR=10`, decoded B1 and the expected State-B plateau.
-7. Enter HLC once and require 1 kHz/5%, stable `FB_PAIR=11` and decoded B2.
+7. Enter HLC once and require 1 kHz/5%, stable `FB_PAIR=10` and decoded B2.
 8. Save a snapshot and perform the confirmed safe shutdown.
 9. Remove power before changing the bench load or restoring the real-EV wiring.

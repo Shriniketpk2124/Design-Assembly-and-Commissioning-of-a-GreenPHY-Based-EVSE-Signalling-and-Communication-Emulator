@@ -66,8 +66,8 @@ class MondayStateTests(unittest.TestCase):
             "C1",
         )
         self.assertEqual(self.decode(snapshot(fb_pair="00")).cp_state, "A2")
-        self.assertEqual(self.decode(snapshot(fb_pair="11")).cp_state, "B2")
-        self.assertEqual(self.decode(snapshot(fb_pair="01")).cp_state, "C2")
+        self.assertEqual(self.decode(snapshot(fb_pair="10")).cp_state, "B2")
+        self.assertEqual(self.decode(snapshot(fb_pair="11")).cp_state, "C2")
 
     def test_relay_off_is_a1(self):
         result = self.decode(snapshot(relay_command="OFF", fb_pair="01"))
@@ -82,7 +82,7 @@ class MondayStateTests(unittest.TestCase):
             snapshot(external_stop_latched=True),
             snapshot(remote="OFF"),
             snapshot(cp_positive_duty=10.0),
-            snapshot(fb_pair="10"),
+            snapshot(fb_pair="01"),
             snapshot(fb_pair="11", fb_d3=0),
         ]
         for value in cases:

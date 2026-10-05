@@ -121,3 +121,4 @@ desktop.ini
 .idea/
 # Local operations configuration
 software/configuration/monday-ops.env
+software/configuration/slac/evse-monday.ini

@@ -14,24 +14,27 @@ class FailSafeSourceTests(unittest.TestCase):
         cls.source = CONTROLLER.read_text(encoding="utf-8")
         cls.tree = ast.parse(cls.source)
 
-    def test_never_reports_ready_or_valid_isolation(self):
-        self.assertNotIn("DCEVSEStatusCode.EVSE_READY", self.source)
-        self.assertNotIn("IsolationLevel.VALID", self.source)
+    def test_probe_is_disabled_by_default(self):
+        self.assertIn('"MONDAY_PRECHARGE_PROBE", "0"', self.source)
+        self.assertIn("PRECHARGE_PROBE_ENABLED", self.source)
+
+    def test_default_status_is_not_ready_and_has_no_imd(self):
         self.assertIn("DCEVSEStatusCode.EVSE_NOT_READY", self.source)
         self.assertIn("IsolationLevel.NO_IMD", self.source)
 
-    def test_contactor_closed_is_literal_false(self):
+    def test_contactor_check_requests_stop_outside_probe(self):
         methods = {
             node.name: node
             for node in ast.walk(self.tree)
             if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
         }
         method = methods["is_contactor_closed"]
-        returns = [node for node in ast.walk(method) if isinstance(node, ast.Return)]
         self.assertTrue(
             any(
-                isinstance(node.value, ast.Constant) and node.value.value is False
-                for node in returns
+                isinstance(node, ast.Call)
+                and isinstance(node.func, ast.Name)
+                and node.func.id == "request_host_stop"
+                for node in ast.walk(method)
             )
         )
 

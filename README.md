@@ -44,7 +44,6 @@ latched an external STOP. No DC output was produced.
 | `software/configuration/` | Public configuration templates without local identifiers or secrets |
 | `validation/procedures/` | Bench and real-EV validation procedures |
 | `validation/selected-results/` | Sanitized results selected for publication |
-| `docs/` | Architecture and setup documentation |
 | `thesis/` | Publication status only; the thesis report is not distributed here |
 
 Raw packet captures, complete run folders, local environment files, vehicle
@@ -110,8 +109,9 @@ the following order:
    bytes of program storage and 448 bytes of global SRAM.
 5. Prepare a Raspberry Pi with Docker Compose, Python 3, `tmux`, `tcpdump`,
    `plc-utils` and the required GPIO/serial permissions.
-6. Check out the recorded upstream `iso15118` revision and apply the files from
-   `software/josev-modifications/` using the Raspberry Pi installation guide.
+6. Follow the [Raspberry Pi installation and first-start guide](software/raspberry-pi/README.md)
+   to check out the recorded upstream `iso15118` revision, prepare the local
+   configuration and install the project additions.
 7. Copy the public templates from `software/configuration/` to local,
    git-ignored configuration files and replace every `CHANGE_ME` value.
 8. Run the hardware-independent tests and the operations-script preflight.
