@@ -4,6 +4,8 @@
 
 > **New here?** Start with [the software quickstart](docs/SOFTWARE_QUICKSTART.md) — two ways to fire up the JoSEV SECC (real hardware, or a two-container software simulation).
 
+> **New here?** Start with [the software quickstart](docs/SOFTWARE_QUICKSTART.md) — two ways to fire up the JoSEV SECC (real hardware, or a two-container software simulation).
+
 This repository documents an engineering prototype for EVSE-side control-pilot
 (CP) signalling, HomePlug Green PHY communication and ISO 15118 message
 observation with a real electric vehicle.
